@@ -45,7 +45,7 @@ open class SessionManager {
 
     /// A default instance of `SessionManager`, used by top-level Alamofire request methods, and suitable for use
     /// directly for any ad hoc requests.
-    open static let `default`: SessionManager = {
+    public static let `default`: SessionManager = {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
 
